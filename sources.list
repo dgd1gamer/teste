@@ -1,0 +1,51 @@
+## Debian Squeeze sources.list
+deb-src http://security.debian.org/ squeeze/updates main
+
+## Debian security updates:
+deb http://security.debian.org/ squeeze/updates main contrib non-free
+deb-src http://security.debian.org/ squeeze/updates main contrib non-free
+
+## Debian.org:
+deb http://ftp.debian.org/debian/ squeeze main contrib non-free
+deb-src http://ftp.debian.org/debian/ squeeze main contrib non-free
+
+## Debian Official Repository Mirror squeeze:
+deb ftp://debian.oregonstate.edu/debian/ squeeze main contrib non-free
+deb-src ftp://debian.oregonstate.edu/debian/ squeeze main contrib non-free
+deb ftp://debian.oregonstate.edu/debian/ squeeze-proposed-updates main contrib non-free
+deb-src ftp://debian.oregonstate.edu/debian/ squeeze-proposed-updates main contrib non-free
+
+## Debian NL mirror:
+deb http://ftp.nl.debian.org/debian squeeze main contrib non-free
+deb-src http://ftp.nl.debian.org/debian squeeze main contrib non-free
+
+## Debian DE mirror:
+deb http://ftp.de.debian.org/debian squeeze main contrib non-free
+deb-src http://ftp.de.debian.org/debian squeeze main contrib non-free
+
+## Debian US mirror:
+deb ftp://ftp.us.debian.org/debian/ squeeze main contrib non-free
+deb-src ftp://ftp.us.debian.org/debian/ squeeze main contrib non-free
+
+## Wine repositories:
+deb http://www.lamaresh.net/apt squeeze main
+
+## Opera webbrowser:
+deb http://deb.opera.com/opera/ squeeze non-free
+
+## Tor:
+deb     http://deb.torproject.org/torproject.org squeeze main
+#Then add the gpg key used to sign the packages by running
+#gpg --keyserver keys.gnupg.net --recv 886DDD89
+#gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
+
+## EFTel mirror updates
+deb http://mirror.eftel.com/debian squeeze main non-free contrib
+deb-src http://mirror.eftel.com/debian squeeze main non-free contrib
+
+## Debian.hands.com squeeze:
+deb http://debian.hands.com/debian/ squeeze main non-free contrib
+deb-src http://debian.hands.com/debian/ squeeze main non-free contrib
+
+## Debian Multimedia squeeze:
+deb http://mirror.home-dn.net/debian-multimedia squeeze main
